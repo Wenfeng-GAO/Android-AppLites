@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.wenfeng.fivecmps.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="com.wenfeng.fivecmps.R.raw"/>
+<fullyQualifiedTypeName name="android.media.MediaPlayer.OnCompletionListener"/>
+<fullyQualifiedTypeName name="com.wenfeng.fivecmps.AudioPlayer"/>
+<fullyQualifiedTypeName name="android.view.SurfaceView"/>
+<fullyQualifiedTypeName name="android.view.SurfaceHolder"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.wenfeng.fivecmps.R.id"/>
+<fullyQualifiedTypeName name="com.wenfeng.fivecmps.R.string"/>
+<fullyQualifiedTypeName name="android.media.MediaPlayer"/>
+</qualifiedTypeNameHistroy>
