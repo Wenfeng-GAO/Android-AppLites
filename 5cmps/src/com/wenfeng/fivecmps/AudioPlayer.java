@@ -18,7 +18,7 @@ public class AudioPlayer {
 	public void play(Context context, SurfaceHolder sh) {
 		stop();
 		
-		mPlayer = MediaPlayer.create(context, R.raw.five_centimeters_per_second_ending_song);
+		mPlayer = MediaPlayer.create(context, R.raw.five_centimeters_per_second);
 		mPlayer.setDisplay(sh);
 		mPlayer.setOnCompletionListener(new OnCompletionListener() {
 			
