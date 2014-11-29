@@ -11,4 +11,6 @@
 <fullyQualifiedTypeName name="com.wenfeng.fivecmps.R.id"/>
 <fullyQualifiedTypeName name="com.wenfeng.fivecmps.R.string"/>
 <fullyQualifiedTypeName name="android.media.MediaPlayer"/>
+<fullyQualifiedTypeName name="android.media.MediaPlayer.OnVideoSizeChangedListener"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

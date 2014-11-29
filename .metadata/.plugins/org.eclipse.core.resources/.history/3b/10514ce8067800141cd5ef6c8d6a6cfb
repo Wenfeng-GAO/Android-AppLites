@@ -20,7 +20,6 @@ public class AudioPlayer {
 		
 		mPlayer = MediaPlayer.create(context, R.raw.five_centimeters_per_second);
 		mPlayer.setDisplay(sh);
-		mPlayer.setScreenOnWhilePlaying(true);
 		mPlayer.setOnCompletionListener(new OnCompletionListener() {
 			
 			@Override
@@ -28,7 +27,6 @@ public class AudioPlayer {
 				stop();
 			}
 		});
-		
 		
 		mPlayer.start();
 	}
@@ -40,5 +38,4 @@ public class AudioPlayer {
 	public void continu() {
 		mPlayer.start();
 	}
-	
 }

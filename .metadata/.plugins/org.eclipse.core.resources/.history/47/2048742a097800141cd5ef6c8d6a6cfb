@@ -3,6 +3,7 @@ package com.wenfeng.fivecmps;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
+import android.media.MediaPlayer.OnVideoSizeChangedListener;
 import android.view.SurfaceHolder;
 
 public class AudioPlayer {
@@ -28,7 +29,12 @@ public class AudioPlayer {
 				stop();
 			}
 		});
-		
+		mPlayer.setOnVideoSizeChangedListener(new OnVideoSizeChangedListener() {
+			
+			@Override
+			public void onVideoSizeChanged(MediaPlayer player, int width, int height) {
+			}
+		});
 		
 		mPlayer.start();
 	}
@@ -41,4 +47,8 @@ public class AudioPlayer {
 		mPlayer.start();
 	}
 	
+	private void setFitToAspectRatio(Context context, MediaPlayer player, int width, int height) {
+		if(player != null) {
+		}
+	}
 }

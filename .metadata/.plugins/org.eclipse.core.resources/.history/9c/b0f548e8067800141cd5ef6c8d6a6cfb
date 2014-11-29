@@ -29,6 +29,7 @@ public class CherryBlossomFragment extends Fragment {
 		
 		// surface view
 		mSurfaceView = (SurfaceView) view.findViewById(R.id.surfaceview);
+		
 		// play button
 		mButtonPlay = (Button) view.findViewById(R.id.button_play);
 		mButtonPlay.setOnClickListener(new OnClickListener() {

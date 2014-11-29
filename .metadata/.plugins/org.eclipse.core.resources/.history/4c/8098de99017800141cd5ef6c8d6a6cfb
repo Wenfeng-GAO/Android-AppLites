@@ -15,12 +15,6 @@ public class CherryBlossomFragment extends Fragment {
 	private SurfaceView mSurfaceView;
 	
 	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setRetainInstance(true);
-	}
-
-	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_cherry_blossom, container);
@@ -29,6 +23,7 @@ public class CherryBlossomFragment extends Fragment {
 		
 		// surface view
 		mSurfaceView = (SurfaceView) view.findViewById(R.id.surfaceview);
+		
 		// play button
 		mButtonPlay = (Button) view.findViewById(R.id.button_play);
 		mButtonPlay.setOnClickListener(new OnClickListener() {
