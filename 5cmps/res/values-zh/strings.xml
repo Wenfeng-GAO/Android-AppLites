@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">秒速5厘米</string>
+    <string name="action_settings">设置</string>
+    <string name="button_play">播放</string>
+    <string name="button_pause">暂停</string>
+    <string name="button_stop">停止</string>
+    <string name="imageview_description_cherryblossom">秒速5厘米的电影海报。</string>
+
+</resources>
