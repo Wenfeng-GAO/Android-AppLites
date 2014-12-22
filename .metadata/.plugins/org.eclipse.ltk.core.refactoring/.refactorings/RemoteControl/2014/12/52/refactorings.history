@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RemoteControl/res/layout/activity_remote_control.xml&apos; to &apos;fragment_remote_control.xml&apos;" description="Rename resource &apos;activity_remote_control.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/activity_remote_control.xml" name="fragment_remote_control.xml" stamp="1419270973419" updateReferences="true"/>
+</session>
