@@ -5,4 +5,6 @@ This repository is a container of various Android App demos when learning Androi
 
 1. 5cmps
 
-2. LauncherControl
+2. NerdLauncher
+
+3. RemoteControll
