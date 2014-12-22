@@ -12,7 +12,6 @@
     android:gravity="center"
     android:text="0"
     android:background="@drawable/window"
-    android:textColor="#fff"
     android:textSize="50dp" />
 <TextView 
     android:id="@+id/textView_working_fragment_remote_control"

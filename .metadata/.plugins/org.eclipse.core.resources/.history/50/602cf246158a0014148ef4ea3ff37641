@@ -11,8 +11,6 @@
     android:layout_weight="2"
     android:gravity="center"
     android:text="0"
-    android:background="@drawable/window"
-    android:textColor="#fff"
     android:textSize="50dp" />
 <TextView 
     android:id="@+id/textView_working_fragment_remote_control"
@@ -37,7 +35,7 @@
     android:layout_weight="1"
     layout="@layout/button_row"
     style="@style/ControlButton" /> -->
-    <TableRow android:layout_weight="1" >
+    <TableRow>
         <Button style="@style/RemoteButton"/>
         <Button style="@style/RemoteButton"/>
         <Button style="@style/ControlButton"/>
