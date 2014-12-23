@@ -2,18 +2,31 @@ package com.wenfeng.photogallery;
 
 import java.util.ArrayList;
 
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.app.SearchManager;
+import android.app.SearchableInfo;
+import android.content.ComponentName;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.SearchView;
+import android.widget.Toast;
 
 public class PhotoGalleryFragment extends Fragment {
 	private static final String TAG = PhotoGalleryFragment.class.getSimpleName();
@@ -26,7 +39,8 @@ public class PhotoGalleryFragment extends Fragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setRetainInstance(true);
-		new FetchItemsTask().execute();
+		setHasOptionsMenu(true);
+		updateItems();
 		
 		mThumbnailThread = new ThumbnailDownloader<ImageView>(new Handler());
 		mThumbnailThread.setListener(new ThumbnailDownloader.Listener<ImageView>() {
@@ -42,6 +56,47 @@ public class PhotoGalleryFragment extends Fragment {
 		mThumbnailThread.start();
 		mThumbnailThread.getLooper();
 		Log.i(TAG, "Background thread started");
+	}
+	
+	public void updateItems() {
+		new FetchItemsTask().execute();
+	}
+
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+	@Override
+	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+		super.onCreateOptionsMenu(menu, inflater);
+		inflater.inflate(R.menu.photo_gallery, menu);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			// Pull out the SearchView
+			MenuItem searchItem = menu.findItem(R.id.menu_item_search);
+			SearchView searchView = (SearchView)searchItem.getActionView();
+			
+			// Get the data from our searchable.xml as a SearchableInfo
+			SearchManager searchManager = (SearchManager)getActivity().getSystemService(Context.SEARCH_SERVICE);
+			ComponentName name = getActivity().getComponentName();
+			SearchableInfo searchInfo = searchManager.getSearchableInfo(name);
+			
+			searchView.setSearchableInfo(searchInfo);
+		}
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.menu_item_search:
+			getActivity().onSearchRequested();
+			return true;
+		case R.id.menu_item_clear:
+			PreferenceManager.getDefaultSharedPreferences(getActivity())
+				.edit()
+				.putString(FlickrFetchr.PREF_SEARCH_QUERY, null)
+				.commit();
+			updateItems();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
 	}
 
 	@Override
@@ -71,6 +126,7 @@ public class PhotoGalleryFragment extends Fragment {
 			return;
 		}
 		if (mItems != null) {
+			Toast.makeText(getActivity().getApplicationContext(), "We found " + mItems.size() + " photos.", Toast.LENGTH_SHORT).show();
 			mGridView.setAdapter(new GalleryItemAdapter(mItems));
 		} else {
 			mGridView.setAdapter(null);
@@ -99,9 +155,19 @@ public class PhotoGalleryFragment extends Fragment {
 
 	private class FetchItemsTask extends AsyncTask<Void, Void, ArrayList<GalleryItem>> {
 
+		@SuppressWarnings("unused")
 		@Override
 		protected ArrayList<GalleryItem> doInBackground(Void... params) {
-			return new FlickrFetchr().fetchItems();
+			Activity activity = getActivity();
+			if (activity == null) {
+				return new ArrayList<GalleryItem>();
+			}
+			String query = PreferenceManager.getDefaultSharedPreferences(activity).getString(FlickrFetchr.PREF_SEARCH_QUERY, null);
+			if (query != null) {
+				return new FlickrFetchr().search(query);
+			} else {
+				return new FlickrFetchr().fetchItems();
+			}
 		}
 
 		@Override

@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Handler;
@@ -27,11 +28,13 @@ public class ThumbnailDownloader<Token> extends HandlerThread {
 		this.listener = listener; 
 	}
 	
+	@SuppressLint("HandlerLeak")
 	@Override
 	protected void onLooperPrepared() {
 		super.onLooperPrepared();
 		handler = new Handler() {
 
+			@SuppressWarnings("unchecked")
 			@Override
 			public void handleMessage(Message msg) {
 				super.handleMessage(msg);
