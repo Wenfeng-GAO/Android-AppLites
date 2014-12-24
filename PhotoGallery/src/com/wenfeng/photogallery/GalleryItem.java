@@ -4,7 +4,17 @@ public class GalleryItem {
 	private String caption;
 	private String id;
 	private String url;
+	private String owner;
 	
+	
+	public String getOwner() {
+		return owner;
+	}
+
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+
 	public String toString() {
 		return caption;
 	}
@@ -33,4 +43,7 @@ public class GalleryItem {
 		this.url = url;
 	}
 	
+	public String getPhotoPageUrl() {
+		return "http://www.flickr.com/photos/" + owner + "/" + id; 
+	}
 }
