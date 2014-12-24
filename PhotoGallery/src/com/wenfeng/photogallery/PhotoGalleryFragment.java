@@ -42,6 +42,7 @@ public class PhotoGalleryFragment extends Fragment {
 		setHasOptionsMenu(true);
 		updateItems();
 		
+		
 		mThumbnailThread = new ThumbnailDownloader<ImageView>(new Handler());
 		mThumbnailThread.setListener(new ThumbnailDownloader.Listener<ImageView>() {
 
@@ -82,6 +83,18 @@ public class PhotoGalleryFragment extends Fragment {
 	}
 
 	@Override
+	public void onPrepareOptionsMenu(Menu menu) {
+		super.onPrepareOptionsMenu(menu);
+		MenuItem toggleItem = menu.findItem(R.id.menu_item_toggle_polling);
+		if (PollService.isServiceAlarmOn(getActivity())) {
+			toggleItem.setTitle(R.string.stop_polling);
+		} else {
+			toggleItem.setTitle(R.string.start_polling);
+		}
+	}
+
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.menu_item_search:
@@ -93,6 +106,15 @@ public class PhotoGalleryFragment extends Fragment {
 				.putString(FlickrFetchr.PREF_SEARCH_QUERY, null)
 				.commit();
 			updateItems();
+			return true;
+		case R.id.menu_item_toggle_polling:
+			boolean shouldStartAlarm = !PollService.isServiceAlarmOn(getActivity());
+			PollService.setserviceAlarm(getActivity(), shouldStartAlarm);
+			
+			// update menu string
+			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+				getActivity().invalidateOptionsMenu();
+			}
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
