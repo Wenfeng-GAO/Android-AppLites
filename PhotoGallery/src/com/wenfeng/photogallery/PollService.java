@@ -18,7 +18,7 @@ import android.util.Log;
 
 public class PollService extends IntentService {
 	private static final String TAG = PollService.class.getSimpleName();
-	private static final int POLL_INTERVAL = 1000 * 5; // 5 seconds
+	private static final int POLL_INTERVAL = 1000 * 60 * 5; // 5 minutes
 	
 	public static final String PREF_IS_ALARM_ON = "isAlarmOn";
 	public static final String ACTION_SHOW_NOTIFICATION = "com.wenfeng.photogallery.SHOW_NOTIFICATION";

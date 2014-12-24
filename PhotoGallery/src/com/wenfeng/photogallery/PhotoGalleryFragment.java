@@ -29,7 +29,6 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.SearchView;
-import android.widget.Toast;
 
 public class PhotoGalleryFragment extends VisibleFragment {
 	private static final String TAG = PhotoGalleryFragment.class.getSimpleName();
@@ -150,7 +149,9 @@ public class PhotoGalleryFragment extends VisibleFragment {
 					long id) {
 				GalleryItem item = mItems.get(pos);
 				Uri photoPageUri = Uri.parse(item.getPhotoPageUrl());
-				Intent intent = new Intent(Intent.ACTION_VIEW, photoPageUri);
+//				Intent intent = new Intent(Intent.ACTION_VIEW, photoPageUri);
+				Intent intent = new Intent(getActivity(), PhotoPageActivity.class);
+				intent.setData(photoPageUri);
 				startActivity(intent);
 			}
 		});
@@ -162,7 +163,6 @@ public class PhotoGalleryFragment extends VisibleFragment {
 			return;
 		}
 		if (mItems != null) {
-			Toast.makeText(getActivity().getApplicationContext(), "We found " + mItems.size() + " photos.", Toast.LENGTH_SHORT).show();
 			mGridView.setAdapter(new GalleryItemAdapter(mItems));
 		} else {
 			mGridView.setAdapter(null);
@@ -191,7 +191,6 @@ public class PhotoGalleryFragment extends VisibleFragment {
 
 	private class FetchItemsTask extends AsyncTask<Void, Void, ArrayList<GalleryItem>> {
 
-		@SuppressWarnings("unused")
 		@Override
 		protected ArrayList<GalleryItem> doInBackground(Void... params) {
 			Activity activity = getActivity();

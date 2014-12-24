@@ -14,7 +14,6 @@ import org.xmlpull.v1.XmlPullParserFactory;
 
 import android.net.Uri;
 import android.util.Log;
-import android.widget.Toast;
 
 public class FlickrFetchr {
 	private static final String TAG = FlickrFetchr.class.getSimpleName();

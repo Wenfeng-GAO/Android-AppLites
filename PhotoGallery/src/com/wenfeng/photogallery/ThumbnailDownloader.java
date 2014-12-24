@@ -51,7 +51,6 @@ public class ThumbnailDownloader<Token> extends HandlerThread {
 		requestMap.clear();
 	}
 	
-	@SuppressWarnings("unused")
 	private void handleRequest(final Token token) {
 		final String url = requestMap.get(token);
 		if (url == null) {

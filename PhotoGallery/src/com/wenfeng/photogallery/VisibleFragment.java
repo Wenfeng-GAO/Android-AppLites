@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.support.v4.app.Fragment;
 import android.util.Log;
-import android.widget.Toast;
 
 public class VisibleFragment extends Fragment {
 	private static final String TAG = VisibleFragment.class.getSimpleName();
@@ -16,7 +15,6 @@ public class VisibleFragment extends Fragment {
 		
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			Toast.makeText(getActivity(), "Got a braodcast: " + intent.getAction(), Toast.LENGTH_LONG).show();
 			Log.i(TAG, "Canceling notification");
 			setResultCode(Activity.RESULT_CANCELED);
 		}
