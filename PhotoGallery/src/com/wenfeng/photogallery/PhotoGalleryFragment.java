@@ -28,7 +28,7 @@ import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.Toast;
 
-public class PhotoGalleryFragment extends Fragment {
+public class PhotoGalleryFragment extends VisibleFragment {
 	private static final String TAG = PhotoGalleryFragment.class.getSimpleName();
 	
 	private GridView mGridView;
