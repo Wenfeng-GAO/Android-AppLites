@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=RunTracker/\/Users\/Wenfeng\/Try\/Android\/Android-AppLites\/RunTracker\/libs\/android-support-v4.jar&lt;android.support.v4.app(Fragment.class[Fragment" modifiers="33" timestamp="1419455489000"/>
-<typeInfo handle="=RunTracker/\/Users\/Wenfeng\/Downloads\/adt-bundle-mac-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android.content(BroadcastReceiver.class[BroadcastReceiver" modifiers="1057" timestamp="1390632646000"/>
+<typeInfo handle="=RunTracker/\/Users\/Wenfeng\/Downloads\/adt-bundle-mac-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android.database.sqlite(SQLiteOpenHelper.class[SQLiteOpenHelper" modifiers="1057" timestamp="1390632646000"/>
+<typeInfo handle="=RunTracker/src&lt;com.wenfeng.runtracker{Locationreceiver.java[Locationreceiver" modifiers="1" timestamp="1419461992000"/>
 </typeInfoHistroy>

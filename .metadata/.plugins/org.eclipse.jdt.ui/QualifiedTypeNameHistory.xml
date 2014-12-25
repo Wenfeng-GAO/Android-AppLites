@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.wenfeng.photogallery.ThumbnailDownloader.Listener"/>
-<fullyQualifiedTypeName name="android.os.Handler"/>
-<fullyQualifiedTypeName name="java.lang.Runnable"/>
-<fullyQualifiedTypeName name="com.wenfeng.photogallery.R.menu"/>
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.PhotoGalleryFragment"/>
 <fullyQualifiedTypeName name="android.os.Build"/>
 <fullyQualifiedTypeName name="android.app.SearchManager"/>
@@ -24,7 +20,6 @@
 <fullyQualifiedTypeName name="android.R.drawable"/>
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.R.string"/>
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.StartupReceiver"/>
-<fullyQualifiedTypeName name="android.content.SharedPreferences"/>
 <fullyQualifiedTypeName name="android.preference.PreferenceManager"/>
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.VisibleFragment"/>
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.PollService"/>
@@ -49,15 +44,20 @@
 <fullyQualifiedTypeName name="android.R.id"/>
 <fullyQualifiedTypeName name="com.wenfeng.runtracker.R.id"/>
 <fullyQualifiedTypeName name="android.location.Location"/>
-<fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="android.content.BroadcastReceiver"/>
 <fullyQualifiedTypeName name="com.wenfeng.runtracker.Locationreceiver"/>
 <fullyQualifiedTypeName name="java.security.acl.LastOwnerException"/>
 <fullyQualifiedTypeName name="com.wenfeng.runtracker.R.string"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.content.IntentFilter"/>
-<fullyQualifiedTypeName name="com.wenfeng.runtracker.RunManager"/>
 <fullyQualifiedTypeName name="android.location.LocationManager"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences"/>
+<fullyQualifiedTypeName name="com.wenfeng.runtracker.RunDatabaseHelper"/>
+<fullyQualifiedTypeName name="android.content.ContentValues"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="com.wenfeng.runtracker.RunManager"/>
+<fullyQualifiedTypeName name="android.database.CursorWrapper"/>
+<fullyQualifiedTypeName name="com.wenfeng.runtracker.Run"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>
