@@ -4,9 +4,19 @@ import java.util.Date;
 
 public class Run {
 	private Date startDate;
+	private long id;
 	
 	public Run() {
+		this.id = -1;
 		this.startDate = new Date();
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public Date getStartDate() {

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=PhotoGallery/\/Users\/Wenfeng\/Try\/Android\/Android-AppLites\/PhotoGallery\/libs\/android-support-v4.jar&lt;android.support.v4.app(Fragment.class[Fragment" modifiers="33" timestamp="1419284218000"/>
-<typeInfo handle="=PhotoGallery/src&lt;com.wenfeng.photogallery{VisibleFragment.java[VisibleFragment" modifiers="1" timestamp="1419446386000"/>
-<typeInfo handle="=PhotoGallery/src&lt;com.wenfeng.photogallery{SingleFragmentActivity.java[SingleFragmentActivity" modifiers="1025" timestamp="1419284274000"/>
-<typeInfo handle="=DragAndDraw/\/Users\/Wenfeng\/Try\/Android\/Android-AppLites\/DragAndDraw\/libs\/android-support-v4.jar&lt;android.support.v4.app(Fragment.class[Fragment" modifiers="33" timestamp="1419450013000"/>
-<typeInfo handle="=DragAndDraw/\/Users\/Wenfeng\/Downloads\/adt-bundle-mac-x86_64-20131030\/sdk\/platforms\/android-19\/android.jar&lt;android.view(View.class[View" modifiers="33" timestamp="1390632543000"/>
+<typeInfo handle="=RunTracker/\/Users\/Wenfeng\/Try\/Android\/Android-AppLites\/RunTracker\/libs\/android-support-v4.jar&lt;android.support.v4.app(Fragment.class[Fragment" modifiers="33" timestamp="1419455489000"/>
+<typeInfo handle="=RunTracker/\/Users\/Wenfeng\/Downloads\/adt-bundle-mac-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android.content(BroadcastReceiver.class[BroadcastReceiver" modifiers="1057" timestamp="1390632646000"/>
 </typeInfoHistroy>

@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.wenfeng.photogallery.PhotoGalleryFragment.FetchItemsTask"/>
-<fullyQualifiedTypeName name="com.wenfeng.photogallery.GalleryItem"/>
-<fullyQualifiedTypeName name="org.xmlpull.v1.XmlPullParserFactory"/>
-<fullyQualifiedTypeName name="org.xmlpull.v1.XmlPullParser"/>
-<fullyQualifiedTypeName name="java.io.StringReader"/>
-<fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
-<fullyQualifiedTypeName name="android.R.layout"/>
-<fullyQualifiedTypeName name="com.wenfeng.photogallery.R.drawable"/>
-<fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="android.graphics.BitmapFactory"/>
-<fullyQualifiedTypeName name="android.net.sip.SipSession.Listener"/>
-<fullyQualifiedTypeName name="android.net.sip.SipAudioCall.Listener"/>
-<fullyQualifiedTypeName name="android.location.GpsStatus.Listener"/>
-<fullyQualifiedTypeName name="com.wenfeng.photogallery.ThumbnailDownloader"/>
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.ThumbnailDownloader.Listener"/>
 <fullyQualifiedTypeName name="android.os.Handler"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
@@ -35,19 +21,14 @@
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.PhotoGalleryActivity"/>
 <fullyQualifiedTypeName name="android.support.v4.app.NotificationCompat"/>
 <fullyQualifiedTypeName name="android.support.v4.app.NotificationCompat.Builder"/>
-<fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="android.R.drawable"/>
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.R.string"/>
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.StartupReceiver"/>
 <fullyQualifiedTypeName name="android.content.SharedPreferences"/>
 <fullyQualifiedTypeName name="android.preference.PreferenceManager"/>
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.VisibleFragment"/>
-<fullyQualifiedTypeName name="android.content.BroadcastReceiver"/>
-<fullyQualifiedTypeName name="android.widget.Toast"/>
-<fullyQualifiedTypeName name="android.content.IntentFilter"/>
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.PollService"/>
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.NotificationReceiver"/>
-<fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="android.app.Activity"/>
 <fullyQualifiedTypeName name="android.app.NotificationManager"/>
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
@@ -60,4 +41,23 @@
 <fullyQualifiedTypeName name="com.wenfeng.photogallery.R.id"/>
 <fullyQualifiedTypeName name="android.webkit.WebChromeClient"/>
 <fullyQualifiedTypeName name="com.wenfeng.draganddraw.R.layout"/>
+<fullyQualifiedTypeName name="com.wenfeng.draganddraw.BoxDrawingView"/>
+<fullyQualifiedTypeName name="android.graphics.PointF"/>
+<fullyQualifiedTypeName name="com.wenfeng.draganddraw.Box"/>
+<fullyQualifiedTypeName name="com.wenfeng.runtracker.R.layout"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.id"/>
+<fullyQualifiedTypeName name="com.wenfeng.runtracker.R.id"/>
+<fullyQualifiedTypeName name="android.location.Location"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="android.content.BroadcastReceiver"/>
+<fullyQualifiedTypeName name="com.wenfeng.runtracker.Locationreceiver"/>
+<fullyQualifiedTypeName name="java.security.acl.LastOwnerException"/>
+<fullyQualifiedTypeName name="com.wenfeng.runtracker.R.string"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.content.IntentFilter"/>
+<fullyQualifiedTypeName name="com.wenfeng.runtracker.RunManager"/>
+<fullyQualifiedTypeName name="android.location.LocationManager"/>
 </qualifiedTypeNameHistroy>
