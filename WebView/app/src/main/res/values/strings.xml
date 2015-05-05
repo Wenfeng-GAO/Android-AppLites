@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WebView</string>
+
+    <string name="gymglish_text">gymglish</string>
+    <string name="frantastique_text">frantastique</string>
+    <string name="vateFaireConjuguer_text">vatefaireconjuguer</string>
+</resources>
